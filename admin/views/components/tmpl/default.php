@@ -53,10 +53,10 @@ $listDirn = $this->state->get('list.direction');
 					<a><?php echo JText::_('COM_JCCDEV_COMPONENT_FIELD_SITE_LABEL') ?></a>
 				</th>
 				<th class="nowrap left">
-					<a><?php echo JText::_('JCC_YES_NO') ?></a>
+					<a><?php echo JText::_('COM_JCCDEV_COMPONENT_FIELD_JCC_LABEL') ?></a>
 				</th>
 				<th class="nowrap left">
-					<a><?php echo JText::_('JCC_TWIG') ?></a>
+					<a><?php echo JText::_('COM_JCCDEV_COMPONENT_FIELD_TWIG_LABEL') ?></a>
 				</th>
 				<th class="nowrap left">
 					<a><?php echo JText::_('COM_JCCDEV_COMPONENT_FIELD_TABLES_LABEL') ?></a>

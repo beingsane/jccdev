@@ -44,6 +44,14 @@ JHtml::_('formbehavior.chosen', 'select');
 				<div class="controls"><?php echo $this->form->getInput('version'); ?></div>
 			</div>
 			<div class="control-group">
+				<div class="control-label"><?php echo $this->form->getLabel('jcc'); ?></div>
+				<div class="controls"><?php echo $this->form->getInput('jcc'); ?></div>
+			</div>
+			<div class="control-group">
+				<div class="control-label"><?php echo $this->form->getLabel('twig'); ?></div>
+				<div class="controls"><?php echo $this->form->getInput('twig'); ?></div>
+			</div>
+			<div class="control-group">
 				<div class="control-label"><?php echo $this->form->getLabel('site'); ?></div>
 				<div class="controls"><?php echo $this->form->getInput('site'); ?></div>
 			</div>

@@ -84,6 +84,30 @@
 				<option value="0">JNO</option>
 			</field>
 			<field 
+				name="jcc"
+				type="radio"
+				label="COM_JCCDEV_TABLE_FIELD_JCC_LABEL"
+				description="COM_JCCDEV_TABLE_FIELD_JCC_DESC"
+				class="btn-group"
+				default="1"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="twig"
+				type="radio"
+				label="COM_JCCDEV_TABLE_FIELD_TWIG_LABEL"
+				description="COM_JCCDEV_TABLE_FIELD_TWIG_DESC"
+				class="btn-group"
+				default="1"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
 				name="frontend_categories"
 				type="radio"
 				label="COM_JCCDEV_TABLE_FIELD_FRONTEND_CATEGORIES_LABEL"

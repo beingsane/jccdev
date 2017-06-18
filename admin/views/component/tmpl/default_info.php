@@ -25,12 +25,12 @@ defined('_JEXEC') or die;
 					<?php echo $this->item->site ? JText::_("JYES") : JText::_("JNO"); ?></span></td>
 				</tr>
 				<tr>
-					<td><?php echo JText::_("JCC_YES_NO") ?>:</td>
+					<td><?php echo JText::_("COM_JCCDEV_COMPONENT_FIELD_JCC_LABEL") ?>:</td>
 					<td><span class="badge badge-<?php echo $this->item->jcc ? "success" : "important"; ?>">
 					<?php echo $this->item->jcc ?  JText::_("JYES") : JText::_("JNO"); ?></span></td>
 				</tr>
 				<tr>
-					<td><?php echo JText::_("JCC_TWIG") ?>:</td>
+					<td><?php echo JText::_("COM_JCCDEV_COMPONENT_FIELD_TWIG_LABEL") ?>:</td>
 					<td><span class="badge badge-<?php echo $this->item->twig ? "success" : "important"; ?>">
 					<?php echo $this->item->twig ?  JText::_("JYES") : JText::_("JNO"); ?></span></td>
 				</tr>

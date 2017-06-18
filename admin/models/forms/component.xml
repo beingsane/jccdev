@@ -30,8 +30,8 @@
 		<field 
 			name="jcc"
 			type="radio"
-			label="JCC"
-			description="JCC_YES_NO"
+			label="COM_JCCDEV_COMPONENT_FIELD_JCC_LABEL"
+			description="COM_JCCDEV_COMPONENT_FIELD_JCC_DESC"
 			default="1"
 			filter="INTEGER"
 			maxlength="1"
@@ -44,8 +44,8 @@
 		<field 
 			name="twig"
 			type="radio"
-			label="JCC_TWIG"
-			description="TWIG"
+			label="COM_JCCDEV_COMPONENT_FIELD_TWIG_LABEL"
+			description="COM_JCCDEV_COMPONENT_FIELD_TWIG_DESC"
 			default="1"
 			filter="INTEGER"
 			maxlength="1"

@@ -171,7 +171,7 @@ class JCCDevCreateComponent extends JCCDevCreate
 	/**
 	 * Execute Create Instance
 	 *
-	 * @param	string	$client	(admin | site)
+	 * @param	string	$client	(admin | site | jcc)
 	 * @param	array	$config	Configuration
 	 */
 	public static function execute($client, $config = array())
@@ -191,6 +191,11 @@ class JCCDevCreateComponent extends JCCDevCreate
 			JFolder::create($component->createDir . "/site/controllers");
 			JFolder::create($component->createDir . "/site/models");
 			JFolder::create($component->createDir . "/site/views");
+			JFolder::create($component->createDir . "/site/helpers");
+		}
+		
+		if ($component->twig) {
+			JFolder::create($component->createDir . "/site/twig");
 		}
 		
 		// Get each file from this folder and get instance of create class

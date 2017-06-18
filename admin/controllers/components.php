@@ -151,9 +151,9 @@ class JCCDevControllerComponents extends JControllerAdmin
 			JCCDevCreateTable::execute("admin", array("item_id" => $id));
 			
 			// Create component for frontend
-			if ($component->get('site', 0))
-			{
-				JCCDevCreateComponent::execute("site", array("item_id" => $id));
+			if ($component->get('site', 0)) { 
+        if ($component->get('jcc', 0)) JCCDevCreateComponent::execute("jcc", array("item_id" => $id)); // jcc + twig?
+        else JCCDevCreateComponent::execute("site", array("item_id" => $id));
 				JCCDevCreateTable::execute("site", array("item_id" => $id));
 			}
 			
