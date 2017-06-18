@@ -1,0 +1,1 @@
+ALTER TABLE `#__jccdev_fields` ADD `options` TEXT NOT NULL AFTER `maxlength`;

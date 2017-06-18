@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field 
+			name="id"
+			type="text"
+			label="COM_JCCDEV_TEMPLATE_FIELD_ID_LABEL"
+			description="COM_JCCDEV_TEMPLATE_FIELD_ID_DESC"
+			size="20"
+			readonly="true"
+			default="0"
+			class="readonly"
+		/>
+		<field 
+			name="name"
+			type="text"
+			label="COM_JCCDEV_TEMPLATE_FIELD_NAME_LABEL"
+			description="COM_JCCDEV_TEMPLATE_FIELD_NAME_DESC"
+			required="1"
+		/>
+		<field 
+			name="display_name"
+			type="text"
+			label="COM_JCCDEV_TEMPLATE_FIELD_DISPLAYNAME_LABEL"
+			description="COM_JCCDEV_TEMPLATE_FIELD_DISPLAYNAME_DESC"
+			required="1"
+		/>
+		<field 
+			name="version"
+			type="text"
+			label="COM_JCCDEV_TEMPLATE_FIELD_VERSION_LABEL"
+			description="COM_JCCDEV_TEMPLATE_FIELD_VERSION_DESC"
+			size="10"
+			default="1.0.0"
+			required="1"
+		/>
+		<field 
+			name="description"
+			type="textarea"
+			label="COM_JCCDEV_TEMPLATE_FIELD_DESCRIPTION_LABEL"
+			description="COM_JCCDEV_TEMPLATE_FIELD_DESCRIPTION_DESC"
+			required="1"
+		/>
+	</fieldset>
+	<fields name="params">
+		<fieldset name="params">
+			<field 
+				name="languages"
+				type="list"
+				label="COM_JCCDEV_COMPONENT_FIELD_LANGUAGES_LABEL"
+				description="COM_JCCDEV_COMPONENT_FIELD_LANGUAGES_DESC"
+				class="inputbox"
+				default="en-GB"
+				multiple="true"
+			>
+			  <option value="af-ZA">COM_JCCDEV_LANGUAGE_AFRIKAANS</option>
+			  <option value="ar-AA">COM_JCCDEV_LANGUAGE_ARABIC_UNITAG</option>
+			  <option value="az-AZ">COM_JCCDEV_LANGUAGE_AZERI</option>
+			  <option value="be-BY">COM_JCCDEV_LANGUAGE_BELARUSIAN</option>
+			  <option value="bg-BG">COM_JCCDEV_LANGUAGE_BULGARIAN</option>
+			  <option value="bs-BA">COM_JCCDEV_LANGUAGE_BOSNIAN</option>
+			  <option value="ca-ES">COM_JCCDEV_LANGUAGE_CATALAN</option>
+			  <option value="ckb-IQ">COM_JCCDEV_LANGUAGE_KURDISH_SORANI</option>
+			  <option value="cy-GB">COM_JCCDEV_LANGUAGE_WELSH</option>
+			  <option value="da-DK">COM_JCCDEV_LANGUAGE_DANISH</option>
+			  <option value="de-DE">COM_JCCDEV_LANGUAGE_GERMAN</option>
+			  <option value="el-GR">COM_JCCDEV_LANGUAGE_GREEK</option>
+			  <option value="en-AU">COM_JCCDEV_LANGUAGE_ENGLISH_AU</option>
+			  <option value="en-GB">COM_JCCDEV_LANGUAGE_ENGLISH_GB</option>
+			  <option value="en-US">COM_JCCDEV_LANGUAGE_ENGLISH_US</option>
+			  <option value="eo-XX">COM_JCCDEV_LANGUAGE_ESPERANTO</option>
+			  <option value="es-ES">COM_JCCDEV_LANGUAGE_SPANISH</option>
+			  <option value="et-EE">COM_JCCDEV_LANGUAGE_ESTONIAN</option>
+			  <option value="eu-ES">COM_JCCDEV_LANGUAGE_BASQUE</option>
+			  <option value="fa-IR">COM_JCCDEV_LANGUAGE_PERSIAN</option>
+			  <option value="fi-FI">COM_JCCDEV_LANGUAGE_FINNISH</option>
+			  <option value="fr-FR">COM_JCCDEV_LANGUAGE_FRENCH</option>
+			  <option value="gd-GB">COM_JCCDEV_LANGUAGE_SCOTTISH_GAELIC</option>
+			  <option value="gl-ES">COM_JCCDEV_LANGUAGE_GALICIAN</option>
+			  <option value="he-IL">COM_JCCDEV_LANGUAGE_HEBREW</option>
+			  <option value="hi-IN">COM_JCCDEV_LANGUAGE_HINDI</option>
+			  <option value="hr-HR">COM_JCCDEV_LANGUAGE_CROATIAN</option>
+			  <option value="hu-HU">COM_JCCDEV_LANGUAGE_HUNGARIAN</option>
+			  <option value="hy-AM">COM_JCCDEV_LANGUAGE_ARMENIAN</option>
+			  <option value="id-ID">COM_JCCDEV_LANGUAGE_BAHASA_INDONESIA</option>
+			  <option value="it-IT">COM_JCCDEV_LANGUAGE_ITALIAN</option>
+			  <option value="ja-JP">COM_JCCDEV_LANGUAGE_JAPANESE</option>
+			  <option value="km-KH">COM_JCCDEV_LANGUAGE_KHMER</option>
+			  <option value="ko-KR">COM_JCCDEV_LANGUAGE_KOREAN</option>
+			  <option value="lo-LA">COM_JCCDEV_LANGUAGE_LAOTIAN</option>
+			  <option value="lt-LT">COM_JCCDEV_LANGUAGE_LITHUANIAN</option>
+			  <option value="lv-LV">COM_JCCDEV_LANGUAGE_LATVIAN</option>
+			  <option value="mk-MK">COM_JCCDEV_LANGUAGE_MACEDONIAN</option>
+			  <option value="nb-NO">COM_JCCDEV_LANGUAGE_NORWEGIAN_BOKMAL</option>
+			  <option value="nl-BE">COM_JCCDEV_LANGUAGE_FLEMISH</option>
+			  <option value="nl-NL">COM_JCCDEV_LANGUAGE_DUTCH</option>
+			  <option value="nn-NO">COM_JCCDEV_LANGUAGE_NORWEGIAN_NYNORSK</option>
+			  <option value="pl-PL">COM_JCCDEV_LANGUAGE_POLISH</option>
+			  <option value="pt-BR">COM_JCCDEV_LANGUAGE_PORTUGUESE_BRAZIL</option>
+			  <option value="pt-PT">COM_JCCDEV_LANGUAGE_PORTUGUESE</option>
+			  <option value="ro-RO">COM_JCCDEV_LANGUAGE_ROMANIAN</option>
+			  <option value="ru-RU">COM_JCCDEV_LANGUAGE_RUSSIAN</option>
+			  <option value="sk-SK">COM_JCCDEV_LANGUAGE_SLOVAK</option>
+			  <option value="sq-AL">COM_JCCDEV_LANGUAGE_ALBANIAN</option>
+			  <option value="sr-RS">COM_JCCDEV_LANGUAGE_SERBIAN_CYRILLIC</option>
+			  <option value="sr-YU">COM_JCCDEV_LANGUAGE_SERBIAN_LATIN</option>
+			  <option value="sv-SE">COM_JCCDEV_LANGUAGE_SWEDISH</option>
+			  <option value="sw-KE">COM_JCCDEV_LANGUAGE_SWAHILI</option>
+			  <option value="sy-IQ">COM_JCCDEV_LANGUAGE_SYRIAC</option>
+			  <option value="ta-IN">COM_JCCDEV_LANGUAGE_TAMIL_INDIA</option>
+			  <option value="th-TH">COM_JCCDEV_LANGUAGE_THAI</option>
+			  <option value="tr-TR">COM_JCCDEV_LANGUAGE_TURKISH</option>
+			  <option value="ug-CN">COM_JCCDEV_LANGUAGE_UYGHUR</option>
+			  <option value="uk-UA">COM_JCCDEV_LANGUAGE_UKRAINIAN</option>
+			  <option value="vi-VN">COM_JCCDEV_LANGUAGE_VIETNAMESE</option>
+			  <option value="zh-CN">COM_JCCDEV_LANGUAGE_CHINESE_SIMPLIFIED</option>
+			  <option value="zh-TW">COM_JCCDEV_LANGUAGE_CHINESE_TRADITIONAL</option>
+			</field>
+			<field 
+				name="copyright"
+				type="text"
+				label="COM_JCCDEV_COMPONENT_FIELD_COPYRIGHT_LABEL"
+				description="COM_JCCDEV_COMPONENT_FIELD_COPYRIGHT_DESC"
+				size="255"
+			/>
+			<field 
+				name="license"
+				type="text"
+				label="COM_JCCDEV_COMPONENT_FIELD_LICENCE_LABEL"
+				description="COM_JCCDEV_COMPONENT_FIELD_LICENCE_DESC"
+				size="255"
+			/>
+			<field 
+				name="author"
+				type="text"
+				label="COM_JCCDEV_COMPONENT_FIELD_AUTHOR_LABEL"
+				description="COM_JCCDEV_COMPONENT_FIELD_AUTHOR_DESC"
+				size="100"
+			/>
+			<field 
+				name="author_email"
+				type="text"
+				label="COM_JCCDEV_COMPONENT_FIELD_AUTHOREMAIL_LABEL"
+				description="COM_JCCDEV_COMPONENT_FIELD_AUTHOREMAIL_DESC"
+				size="50"
+			/>
+			<field 
+				name="author_url"
+				type="text"
+				label="COM_JCCDEV_COMPONENT_FIELD_AUTHORURL_LABEL"
+				description="COM_JCCDEV_COMPONENT_FIELD_AUTHORURL_DESC"
+				size="100"
+			/>
+		</fieldset>
+	</fields>
+</form>

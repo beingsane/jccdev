@@ -1,0 +1,1 @@
+ALTER TABLE `#__jccdev_components` DROP `ordering`

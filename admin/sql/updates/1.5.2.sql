@@ -1,0 +1,1 @@
+ALTER TABLE `#__jccdev_tables` ADD `type` VARCHAR(50) NOT NULL AFTER `name`;
