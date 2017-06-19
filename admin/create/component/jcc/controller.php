@@ -16,7 +16,9 @@ JCCDevLoader::import("component", JCCDevCREATE);
  * @package     JCCDev
  * @subpackage  Create.Component
  */
-class JCCDevCreateComponentJccController extends JCCDevCreateComponent
+include_once(__DIR__.'/../JccCreate.php');
+
+class JCCDevCreateComponentJccController extends JccCreate //JCCDevCreateComponent
 {		
 	/**
 	 * The template file

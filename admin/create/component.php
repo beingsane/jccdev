@@ -76,6 +76,7 @@ class JCCDevCreateComponent extends JCCDevCreate
 
 		$app = JFactory::getApplication();
 		if (!isset($config['item_id']) || empty($config['item_id'])) throw new JCCDevException($this->_name . ": No component id given");
+		$this->config=$config;
 		
 		// Get component data
 		$this->component = $this->getModel('component')->getItem($config['item_id']);
@@ -122,6 +123,11 @@ class JCCDevCreateComponent extends JCCDevCreate
 	 */
 	public function addLanguageKeys($langkeys, $name = "")
 	{
+$pos = strpos($langkeys, '## singular ##');
+if ($pos) {
+print $langkeys;
+$pos->ppp();
+}
 		$language = $this->getLanguage($name);
 		$prefix = "COM_" . strtoupper($this->component->name);
 
@@ -192,12 +198,10 @@ class JCCDevCreateComponent extends JCCDevCreate
 			JFolder::create($component->createDir . "/site/models");
 			JFolder::create($component->createDir . "/site/views");
 			JFolder::create($component->createDir . "/site/helpers");
+//   		if ($component->twig) {
+	 		  JFolder::create($component->createDir . "/site/twig");
+//		  }
 		}
-		
-		if ($component->twig) {
-			JFolder::create($component->createDir . "/site/twig");
-		}
-		
 		// Get each file from this folder and get instance of create class
 		foreach (JFolder::files(JCCDevCREATE . "/component/$client", "php$") as $file)
 		{
@@ -381,7 +385,9 @@ class JCCDevCreateComponent extends JCCDevCreate
 			$path = str_replace('view' . DS . 'feed', 'view.feed', $path);
 			$path = str_replace('view' . DS . 'html', 'view.html', $path);
 			$path = str_replace('version', $this->component->version, $path);
-			
+
+			$path = str_replace('jcc', 'site', $path); // jcc + site = site
+
 			$path = $this->createDir . "/" . $path;
 		}
 		

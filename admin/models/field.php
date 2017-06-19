@@ -111,8 +111,10 @@ class JCCDevModelField extends JModelAdmin
 		
 		// Load options
 		$registry = new JRegistry();
-		$registry->loadString($item->options);
-		$item->options = $registry->toArray();
+		if (!isset($item->options)) $item->options='';
+  	$registry->loadString($item->options);
+	  $item->options = $registry->toArray();
+	  
 		
 		return $item;
 	}

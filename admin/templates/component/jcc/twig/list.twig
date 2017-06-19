@@ -1,0 +1,12 @@
+<h3>##Component##</h3>
+
+{% for ##singular## in ##plural## %}
+<div class="media">
+  <div class="media-body">
+   <a href="##plural##/{{ ##singular##.id }}"> {{ ##singular##.id }} </a> 
+   [ ..... ]
+  </div>
+</div>
+{% else %}
+<p>No ##plural## found</p>
+{% endfor %}

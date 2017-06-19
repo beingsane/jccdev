@@ -16,7 +16,7 @@ if (!file_exists ( $load_jcc )) {
   include_once($load_jcc);
   include_once('controller.php');
   try {
-    $controller = new Controller();
+    $controller = new ##Component##Controller();
     $controller->execute();
   } catch (Exception $e) {
     $controller->redirection(JURI::base(), $e->getMessage(), 'error');

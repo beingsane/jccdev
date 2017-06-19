@@ -35,6 +35,7 @@
 		<folder>helpers</folder>
 		<folder>models</folder>
 		<folder>views</folder>
+		<folder>twig</folder>
 	</files>
 	
 	<languages folder="site">##languages_site##

@@ -1,2 +1,0 @@
-
-				<td style="width:50%"><?php echo $this->escape($item->##field##); ?></td>
